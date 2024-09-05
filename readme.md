@@ -39,7 +39,7 @@ Task tracker is a project used to track and manage your tasks. In this task, you
     python3 main.py mark-done 1
     ```    
 ## Project url
-[roadmap.sh projects](https://roadmap.sh/projects/task-tracker)
+[task-tracker](https://replit.com/@glaw14/task-tracker)
 
 ## Contributing
 If you would like to contribute to this project, please follow these steps:
