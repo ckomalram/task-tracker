@@ -18,7 +18,6 @@ def save_tasks(tasks):
         json.dump(tasks, file, indent=4)
 
 def print_tasks(tasks):
-        print("\n List Of Tasks:")
         for task in tasks:
             print(f"ID: {task['id']} | DESCRIPTION: {task['description']} | STATUS: {task['status']} ")                
 
@@ -72,7 +71,7 @@ def mark_done_task(task_id):
     else:
         print(f"Task with ID {task_id} not found.")
         return
- 
+
 def main():
     if len(sys.argv) < 2:
         print("usage : main.py <command> [options]")
@@ -118,6 +117,7 @@ def main():
             if not filtered_tasks:
                 print(" Not Filtered Tasks  found")
             else:
+                print("\n List Of Tasks:")
                 print_tasks(filtered_tasks)
         else:
             print("usage: main.py list [done|todo|in-progress]")
